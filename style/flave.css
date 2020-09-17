@@ -45,67 +45,61 @@ a
 }
 
 
-
 /* NAVIGATION */
 .flave_navbar
 {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding: 5px 0;
+    align-items: stretch;
+    height: 100%;
 }
 .flave_navlist
 {
     flex: 2;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
+    align-items: stretch;
+
+}
+.flave_navitem
+{
+    color: var(--white);
+    font-size: 14pt;
+    padding: 10px 20px;
+}
+.flave_navitem:hover
+{
+    color: var(--black);
+    background-color: white;
+    font-size: 14pt;
+    padding: 10px 20px;
 }
 .flave_navsearch
 {
     flex: 1;
     display: flex;
     margin-left: 10px;
-}
-.flave_navitem
-{
-    color: var(--white);
-    font-size: 16pt;
-    padding: 10px 20px;
-}
-.flave_navitem:hover
-{
-    border-radius: 10px;
-    color: var(--white);
-    background-color: rgb(76, 159, 227);
+    justify-content: flex-end;
 }
 .flave_input_text
 {
-    margin-right: 5px;
-    color: var(--black);
-    font-size: 16pt;
-    padding: 10px 20px;
-    height: 40px;
+    padding: 0 10px;
     border-radius: 5px;
-    align-self: right;
-    margin-left:auto;
-    outline: none;
-    border: none;
 }
 .flave_button
 {
-    color: var(--black);
-    background-color: var(--shade);
-    border-radius: 10px;
-    padding: 5px;
-    outline: none;
-    border: none;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin: 0 2px;
 }
 .flave_button:hover
 {
     color: var(--button);
-    background-color: var(--white);  
+    background-color: white;
 }
+
+
 
 /* FORM */
 .flave_form

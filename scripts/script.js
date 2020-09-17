@@ -1,7 +1,7 @@
 
 
 // STICKY NAVBAR
-var nav = document.getElementById("navbar");
+var nav = document.getElementsByClassName("navbar_wrapper")[0];
 navOffest = nav.offsetTop;
 
 $(window).scroll(function () {
@@ -17,11 +17,7 @@ function handleStickyNav() {
 	}
 }
 
-
-// NAV BAR TOGGLING
-
-// // Navigation Bar Toggling
-$("#navtoggler").click(function () {
-	$("#navbar").toggleClass("navbartoggled");
-	$(".navlink").toggleClass("navlinktoggled");
-});
+$("#navtoggler").click(() => {
+	$(".navbar_wrapper").toggleClass("navbartoggled");
+	$(".flave_navbar").toggleClass("flave_navbar_show")
+})
