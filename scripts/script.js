@@ -29,6 +29,7 @@ function toggleNav() {
 			toggeled = true;
 
 			$(".maincontent_wrapper").css('filter', 'blur(10px)');
+			$("#top_header").css('filter', 'blur(10px)');
 			$(document.body).css('overflow', 'hidden');
 		}
 		catch (e) { }
@@ -40,6 +41,7 @@ function toggleNav() {
 			toggeled = false;
 
 			$(".maincontent_wrapper").css('filter', 'none');
+			$("#top_header").css('filter', 'none');
 			$(document.body).css('overflow', 'scroll');
 		}
 		catch (e) { }
