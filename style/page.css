@@ -64,7 +64,7 @@ body
     align-content: center;
     background: url("../data/images/header.png");
     background-color: rgba(0, 0, 0, 0.6);
-    min-height: 400px;
+    min-height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: soft-light;
