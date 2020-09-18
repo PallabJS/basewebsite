@@ -28,8 +28,8 @@ function toggleNav() {
 			$("#navtoggler").removeClass("fas fa-bars");
 			toggeled = true;
 
-			$(".maincontent_wrapper").css('filter', 'blur(10px)');
-			$("#top_header").css('filter', 'blur(10px)');
+			$(".maincontent_wrapper").css('filter', 'blur(5px)');
+			$("#top_header").css('filter', 'blur(5px)');
 			$(document.body).css('overflow', 'hidden');
 		}
 		catch (e) { }
