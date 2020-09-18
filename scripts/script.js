@@ -1,5 +1,4 @@
 
-
 // STICKY NAVBAR
 var nav = document.getElementsByClassName("navbar_wrapper")[0];
 navOffest = nav.offsetTop;
@@ -17,19 +16,20 @@ function handleStickyNav() {
 	}
 }
 
-// TOGGLE NAV BAR
+//----------- TOGGLE NAV BAR ------------------------------
 var toggeled = false;
 $("#navtoggler").addClass("fas fa-bars");
-
-$("#navtoggler").click(() => {
+function toggleNav() {
 	$(".navbar_wrapper").toggleClass("navbartoggled");
 	$(".flave_navbar").toggleClass("flave_navbar_show")
 	if (!toggeled) {
 		try {
 			$("#navtoggler").addClass("fa-window-close");
 			$("#navtoggler").removeClass("fas fa-bars");
-			console.log("toggled");
 			toggeled = true;
+
+			$(".maincontent_wrapper").css('filter', 'blur(10px)');
+			$(document.body).css('overflow', 'hidden');
 		}
 		catch (e) { }
 	}
@@ -37,9 +37,19 @@ $("#navtoggler").click(() => {
 		try {
 			$("#navtoggler").addClass("fas fa-bars");
 			$("#navtoggler").removeClass("fa-window-close");
-			console.log("shrinked");
 			toggeled = false;
+
+			$(".maincontent_wrapper").css('filter', 'none');
+			$(document.body).css('overflow', 'scroll');
 		}
 		catch (e) { }
 	}
+}
+
+$("#navtoggler").click(() => {
+	toggleNav();
 })
+
+$(".flave_navitem").click(() => {
+	toggleNav();
+});

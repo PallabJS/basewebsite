@@ -20,6 +20,7 @@ body
 }
 
 /* common styling */
+
 .content_title_dark
 {
     color: var(--white);
@@ -121,6 +122,7 @@ body
 {
     position: absolute;
     top: 0;
+    z-index: 10;
     background-color: var(--black);
     padding: 0px 10px;
     background-color: rgba(0, 0, 0, 0.8);
