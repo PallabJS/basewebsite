@@ -43,14 +43,3 @@ $("#navtoggler").click(() => {
 		catch (e) { }
 	}
 })
-
-// let screen = window.matchMedia("(max-width: 1000px)");
-// toggleButton(screen);
-// screen.addListener(toggleButton);
-
-// function toggleButton(screen) {
-// 	console.log("matched");
-// 	if (screen.matches) {
-
-// 	}
-// }
