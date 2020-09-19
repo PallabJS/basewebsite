@@ -14,12 +14,19 @@ function startAnim(object, state, time) {
 // Animation definitions
 $(document).ready(function () {
 
+    // Initial anim
+    $('.fadein').each(function (i) {
+        startAnim(this, {
+            opacity: 1
+        }, 1000);
+    });
+
     $(window).scroll(() => {
         // start fade in animation
         $('.fadein').each(function (i) {
             startAnim(this, {
                 opacity: 1
-            }, { "duration": 1000, "queue": false });
+            }, 1000);
         });
     })
 });
