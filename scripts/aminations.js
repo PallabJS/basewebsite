@@ -8,7 +8,6 @@ function startAnim(object, state, time) {
     if (window_bottom >= element_mid) {
         $(object).animate(state, time);
     }
-    console.log("callse");
 }
 
 // Animation definitions

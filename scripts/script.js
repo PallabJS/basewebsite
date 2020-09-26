@@ -53,5 +53,7 @@ $("#navtoggler").click(() => {
 })
 
 $(".flave_navitem").click(() => {
-	toggleNav();
+	if (toggeled) {
+		toggleNav();
+	}
 });
